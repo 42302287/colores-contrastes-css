@@ -1,0 +1,62 @@
+:root {
+  --primario: #2563EB;
+  --primario-claro: #D9EAF7;
+  --texto: #1F2937;
+  --fondo: #F7F9FC;
+  --superficie: #FFFFFF;
+  --exito: #166534;
+  --error: #B42318;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--texto);
+  background: var(--fondo);
+}
+
+.encabezado {
+  padding: 1.5rem;
+  color: white;
+  background: var(--primario);
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.tarjeta {
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+  background: var(--superficie);
+  border: 1px solid #CBD5E1;
+  border-radius: .6rem;
+}
+
+button {
+  padding: .7rem 1rem;
+  color: white;
+  background: var(--primario);
+  border: 2px solid var(--primario);
+  border-radius: .35rem;
+}
+
+button:hover { filter: brightness(.88); }
+button:focus-visible { outline: 3px solid #F59E0B; outline-offset: 3px; }
+
+
+
+.estado-exito::before{
+  content: "✔ ";
+  color: var(--exito);
+  font-weight: bold;
+}
+
+.estado-error::before{
+  content: "✖ ";
+  color: var(--error);
+  font-weight: bold;
+}
+
