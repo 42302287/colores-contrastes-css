@@ -43,5 +43,19 @@ button {
   border-radius: .35rem;
 }
 
+
+.estado-exito::before{
+  content: "✔ ";
+  color: var(--exito);
+  font-weight: bold;
+}
+
+.estado-error::before{
+  content: "✖ ";
+  color: var(--error);
+  font-weight: bold;
+}
+
+
 button:hover { filter: brightness(.88); }
 button:focus-visible { outline: 3px solid #F59E0B; outline-offset: 3px; }
